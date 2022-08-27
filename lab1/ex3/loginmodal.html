@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> 
+    <title>Login Modal</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Mở biểu mẫu đăng nhập</h2>
+        <a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modall">Mở hộp thoại</a>
+
+        <div id="modall" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header text-center d-block">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">
+                            <i class="fas fa-lock"></i>Đăng nhập
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="usernameInput">
+                                    <i class="fas fa-user"></i>Người dùng:
+                                </label>
+                                <input class="form-control" placeholder="Nhập tên người dùng" id="usernameInput">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="passwordInput">
+                                    <i class="fas fa-eye"></i>Mật khẩu:
+                                </label>
+                                <input class="form-control" placeholder="Nhập mật khẩu" id="passwordInput">
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label"> Ghi nhớ tôi</label>
+                            </div>
+
+                            <button class="btn btn-success btn-block">
+                                <i class="fas fa-power-off"></i>Đăng nhập
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-danger mr-auto" data-dismiss="modal">
+                            <i class="fas fa-times"></i>Hủy bỏ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
